@@ -5,7 +5,6 @@
 #ifndef UNTITLED4_LIGHTSWITCHER_H
 #define UNTITLED4_LIGHTSWITCHER_H
 
-
 #include <Arduino.h>
 #include "GyverButton.h"
 #include "LightControl.h"
@@ -25,10 +24,7 @@ class LightSwitcher {
     GButton gabBtn;
     GRGB lightLed; // куда подключены цвета (R, G, B)
 public:
-
-
     explicit LightSwitcher(const GRGB &lightLed) : lightLed(lightLed) {}
-
     GButton switch_btn() const {
         return switchBtn;
     }
@@ -85,9 +81,7 @@ public:
 
     }
 
-
     unsigned long blinkStartTime = millis();
-
      byte blinkStep = 0;
 private:
     bool blink(int blinkTimeout) {
@@ -147,7 +141,6 @@ private:
             highLight.turnOff();
     }
 
-
 private:
     bool shouldTurnOnLow() {
         return lowBtn.state();
@@ -162,7 +155,6 @@ private:
     bool shouldBlink() {
         return !shineOrBlinkBtn.state();
     }
-
 
 public:
     void controlTheLight() {
@@ -282,6 +274,5 @@ private:
         }
     }
 };
-
 
 #endif //UNTITLED4_LIGHTSWITCHER_H

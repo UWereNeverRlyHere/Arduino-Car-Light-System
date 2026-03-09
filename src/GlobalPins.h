@@ -1,12 +1,9 @@
 //
 // Created by V on 09.07.2024.
 //
-
 #ifndef UNTITLED4_GLOBALPINS_H
 #define UNTITLED4_GLOBALPINS_H
-
 #include <Arduino.h>
-
 
 enum GlobalPins {
     inputSkull = 2,
@@ -26,6 +23,5 @@ enum GlobalPins {
     lowHigLedG =10,
     lowHigLedB =11,
 };
-
 
 #endif //UNTITLED4_GLOBALPINS_H

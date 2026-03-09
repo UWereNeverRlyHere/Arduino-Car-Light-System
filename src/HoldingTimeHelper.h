@@ -1,11 +1,8 @@
 //
 // Created by V on 10.07.2024.
 //
-
 #ifndef UNTITLED4_HOLDINGTIMEHELPER_H
 #define UNTITLED4_HOLDINGTIMEHELPER_H
-
-
 #include <Arduino.h>
 
 class HoldingTimeHelper {
@@ -29,8 +26,6 @@ public:
         bool res = holdingStartTime + time <= millis() && isHoldingStarted;
         return res;
     }
-
 };
-
 
 #endif //UNTITLED4_HOLDINGTIMEHELPER_H

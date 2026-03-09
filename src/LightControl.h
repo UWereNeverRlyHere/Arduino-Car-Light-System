@@ -4,8 +4,6 @@
 
 #ifndef UNTITLED4_LIGHTCONTROL_H
 #define UNTITLED4_LIGHTCONTROL_H
-
-
 #include <WString.h>
 #include <HardwareSerial.h>
 #include <Arduino.h>
@@ -69,6 +67,5 @@ public:
             turnOn();
     }
 };
-
 
 #endif //UNTITLED4_LIGHTCONTROL_H

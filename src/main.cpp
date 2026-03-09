@@ -3,14 +3,10 @@
 #include "SkullSwitcher.h"
 #include "GRGB.h"
 
-
-
 GRGB skullLed(COMMON_CATHODE, skullLedR, skullLedG, skullLedB);; // куда подключены цвета (R, G, B)
 GRGB lightLed(COMMON_CATHODE, lowHigLedR, lowHigLedG, lowHigLedB);; // куда подключены цвета (R, G, B)
 SkullSwitcher skullControl (skullLed);
 LightSwitcher lightControl (lightLed);
-
-
 
 void setup() {
     // put your setup code here, to run once:
@@ -19,7 +15,6 @@ void setup() {
     pinMode(inputSwitch, INPUT_PULLUP);
     pinMode(inputAllLightOn, INPUT_PULLUP);
     pinMode(outputSkull, INPUT_PULLUP);
-
 
     pinMode(outputSkull, OUTPUT);
     pinMode(outputHighLight, OUTPUT);
@@ -41,7 +36,6 @@ void setup() {
     pinMode(lowHigLedG, OUTPUT);
     pinMode(lowHigLedB, OUTPUT);
 
-
     // теперь любая установка цвета будет плавной
     // установить период перехода
     Serial.begin(9600);
@@ -60,5 +54,4 @@ void loop() {
     skullLed.tick();
     skullControl.controlTheSkull();
     lightControl.controlTheLight();
-
 }

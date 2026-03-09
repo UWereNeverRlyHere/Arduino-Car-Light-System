@@ -12,14 +12,12 @@
 #include "EEPROM.h"
 #include "HoldingTimeHelper.h"
 
-
 class SkullSwitcher {
 
     LightControl skullLight;
     GButton skullButton;
     //HoldingTimeHelper holdingTimeHelper;
     GButton switchBtn;
-
 public:
     void set_switch_btn(const GButton &switch_btn) {
         switchBtn = switch_btn;
@@ -31,7 +29,6 @@ private:
     bool isLedTurnedOff = true;
     bool isFirstStart = true;
     unsigned long skullRestartTime = millis();
-
 
     GRGB skullLed; // куда подключены цвета (R, G, B)
 public:
@@ -165,12 +162,9 @@ public:
             //  holdingTimeHelper.resetHolding();
         }
 
-
         if (!isLedTurnedOff) {
             changeLedColors();
         }
-
-
     }
 
 private:
@@ -255,6 +249,5 @@ private:
         }
     }
 };
-
 
 #endif //UNTITLED4_SKULLSWITCHER_H
