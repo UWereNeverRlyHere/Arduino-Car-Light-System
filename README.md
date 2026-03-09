@@ -22,9 +22,8 @@ All hardware-specific configurations are strictly separated from the logic class
 Pin mappings (inputs from buttons, outputs to relays, PWM pins for LEDs) and default system parameters are centralized in the GlobalPins.h file. This makes porting the code to a different Arduino board or modifying the wiring extremely simple, requiring zero changes to the core engine.
 
 V1.0 Hardware Prototype. The cable management is strictly DIY, but the state-machine logic under the hood runs flawlessly.
-[Prototype](assets/P_20240707_180119.jpg)
-[Prototype2](assets/P_20240707_180122.jpg)
-[Inner RGB](assets/P_20240721_123341.jpg)
-[Light System Demo](assets/video_2026-03-09_09-35-04.gif)
-[Light System Demo2](assets/video_2026-03-09_09-35-00.gif)
-[Light System Demo3](assets/video_2026-03-09_09-34-55.gif)
+![Prototype](assets/P_20240707_180119.jpg)
+![Prototype2](assets/P_20240707_180122.jpg)
+![Inner RGB](assets/P_20240721_123341.jpg)
+![Light System Demo2](assets/video_2026-03-09_09-35-00.gif)
+![Light System Demo3](assets/video_2026-03-09_09-34-55.gif)
